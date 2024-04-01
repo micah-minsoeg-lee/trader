@@ -3,6 +3,6 @@ package api
 type Api struct {
 }
 
-func NewApi() (*Api, error) {
+func NewApi(url, apiKey string) (*Api, error) {
 	return nil, nil
 }

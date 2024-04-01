@@ -49,6 +49,10 @@ func (c *Config) Url() string {
 	return c.api.url
 }
 
+func (c *Config) Key() string {
+	return c.api.key
+}
+
 func (c *Config) UpperLine() uint {
 	return c.trade.upperLine
 }

@@ -12,6 +12,9 @@ func main() {
 		fmt.Println(err)
 		return
 	} else {
-		app.Run(context.Background())
+		if err := app.Run(context.Background()); err != nil {
+			fmt.Println(err)
+			return
+		}
 	}
 }
